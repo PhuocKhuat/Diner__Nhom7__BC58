@@ -251,7 +251,55 @@ header .container{
 .menu__border{
     position: relative;
 }
+/* Service */
+.services {
+    position: relative;
+}
+.container {
+    width: 100%;
+}
+.row {
+    display: flex;
+}
+.services .col-4 {
+    width: 30%;
+    margin: 10px;
+}
 
+.box-wrap {
+    border: 1px solid lightgrey;
+    padding: 40px 40px;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    position: relative;
+}
+.services .box {
+    display: flex;
+}
+.box .icon {
+    margin-right: 10px;
+    font-size: 50px;
+    color: #FF6600;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-wrap:hover .icon{
+    background-color: #FF6600;
+    color: white;
+    
+} 
+.info a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
 /* REPONSIVE */
 @media screen and (max-width: 1199.98px){
     .header__left a {
