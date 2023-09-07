@@ -299,7 +299,21 @@ header .container{
     color: black;
     font-weight: bold;
     font-size: 25px;
-}
+}  
+.content {
+      background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner2.jpg);
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    background-position:center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
 /* REPONSIVE */
 @media screen and (max-width: 1199.98px){
     .header__left a {
