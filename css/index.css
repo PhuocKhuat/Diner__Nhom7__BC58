@@ -301,7 +301,7 @@ header .container{
     font-size: 25px;
 }  
 .content {
-      background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner2.jpg);
+    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner2.jpg);
     background-repeat: no-repeat,
     no-repeat,
     no-repeat;
@@ -314,6 +314,13 @@ header .container{
     position: relative;
     z-index: 1;
   }
+.welcome-left h3 {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    color: #fff;
+    max-width: 800px;
+}
 /* REPONSIVE */
 @media screen and (max-width: 1199.98px){
     .header__left a {
