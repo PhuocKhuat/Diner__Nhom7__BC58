@@ -306,7 +306,7 @@ header .container{
     no-repeat,
     no-repeat;
     width: 100%;
-    height: 100%;
+    height: 500px;
     background-position:center;
     background-size: cover;
     -webkit-background-size: cover;
@@ -316,6 +316,14 @@ header .container{
     position: relative;
     z-index: 1;
   }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 .content_container {
     max-width: 800px;
     margin: auto;
@@ -349,6 +357,7 @@ header .container{
 }
 .welcome_left {
     text-align: center;
+    margin-top: 90px;
 }
 .welcome_left h3 {
     display: flex;
@@ -360,8 +369,34 @@ header .container{
     color: #fff;
     max-width: 800px;
 }
-.numbers {
-    position: absolute;
+.numbers_container {
+    text-align: center;
+    margin-top: -90px;
+    position: relative;
+    z-index: 10;
+}
+.row {
+    margin-left: 20px;
+}
+.col-md-3 {
+    background-color: white;
+    width: 23%;
+    border: 1px solid lightgrey;
+    padding: 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    margin-right: 15px;
+}
+.col-md-3 i {
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: #FF6600;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    text-align: center;
 }
 /* REPONSIVE */
 @media screen and (max-width: 1199.98px){
