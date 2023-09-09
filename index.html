@@ -230,7 +230,7 @@
     <!-- Service -->
     
 <section class="services py-5">
-  <div class="container py-lg-5 py-md-3 py-3">
+  <div class="container">
     <div class="row">
      <div class="col-4">
         <div class="box-wrap">
@@ -374,21 +374,24 @@
 </section>
 <section class="w3l-video" id="video">
     <div class="new-block py-5">
-      <div class="container py-lg-5 HomePageVideoPopup">
+      <div class="container py-lg-5">
         <div class="history-info">
           <a href="#small-dialog" class="zoom">
             <span class="video-play-icon">
               <span class="fa fa-play"></span>
             </span>
           </a>
+          <div id="small-dialog" class="zoom_vid">
+            <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen"
+              allowfullscreen></iframe>
+          </div>
         </div>
-        <div id="small-dialog" class="zoom_vid">
-          <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen"
-            allowfullscreen></iframe>
-        </div>
+
       </div>
+
     </div>
   </section>
+  
 <footer>
       <!-- place footer here -->
     </footer>
@@ -408,7 +411,7 @@
       crossorigin="anonymous"
     ></script>
     <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <!-- waypoint -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
@@ -417,7 +420,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- countup js -->
-    <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/"></script>
+    <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
     <!-- config -->
     <script>
       $(".timer").countUp();
