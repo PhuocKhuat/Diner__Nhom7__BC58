@@ -372,13 +372,23 @@
     </div>
   </div>
 </section>
-<section class="video">
-  <div class="container">
-    <div class="block">
-      <iframe title="vimeo-player" src="https://player.vimeo.com/video/305185528?h=195bf3cba0" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+<section class="w3l-video" id="video">
+    <div class="new-block py-5">
+      <div class="container py-lg-5 HomePageVideoPopup">
+        <div class="history-info">
+          <a href="#small-dialog" class="zoom">
+            <span class="video-play-icon">
+              <span class="fa fa-play"></span>
+            </span>
+          </a>
+        </div>
+        <div id="small-dialog" class="zoom_vid">
+          <iframe src="https://player.vimeo.com/video/305185528" frameborder="0" allow="autoplay; fullscreen"
+            allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 <footer>
       <!-- place footer here -->
     </footer>
@@ -397,6 +407,19 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
-  
+    <!-- /counter-->
+<script src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/js/counter.js"></script>
+<!-- //counter-->
+<!--/MENU-JS-->
+<script>
+  $(window).on("scroll", function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 80) {
+      $("#site-header").addClass("nav-fixed");
+    } else {
+      $("#site-header").removeClass("nav-fixed");
+    }
+  });
   </body>
 </html>
