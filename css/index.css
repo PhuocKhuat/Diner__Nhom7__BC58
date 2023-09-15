@@ -1,3 +1,844 @@
+/* GLOBAL */
+html, body{
+    font-family: 'Quicksand', sans-serif;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.container{
+    margin: auto;
+    width: 82%;
+}
+h6{
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: #ff6600;
+    display: block;
+}
+h3{
+    font-size: 2.125rem;
+    line-height: 48px;
+    font-weight: 600;
+}
+/* HEADER */
+header{
+    position: absolute;
+    top: 0; left: 100px;
+    z-index: 1;
+}
+.header__form{
+    position: relative !important;
+    display: flex;
+    flex: 1;
+    margin: 0 auto;
+    width: 90%;
+}
+.header__form .search__icon{
+    position: absolute; 
+    right: 20px;
+    font-size: 15px;
+    top: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+/* .header__left{
+    width: 65%;
+} */
+.header__right{
+    display: grid;
+    grid-template-columns: 2.25fr 0.25fr 0.5fr;
+    grid-gap: 10px;
+    align-items: center;
+    /* width: 35%; */
+    position: relative;
+    top: -55px;
+    left: 725px;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 20px 0;
+    align-items: center;
+    flex-wrap: initial;
+}
+.header__button{
+    background-color: transparent;
+}
+.header__button i {
+    font-size: 1.875rem;
+    display: inline-block;
+    color: white;
+}
+.header__form .form-control{
+    display: flex;
+    flex: 1;
+    padding: 10px 50px 10px 20px;
+    height: 40px;
+    font-size: 1rem;
+    border: none;
+    font-weight: 400;
+    position: relative;
+    right: 0;
+    border: 1px solid white;
+    box-shadow: none;
+}
+.header__left a{
+    margin: 0;
+    padding: 0;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+.header__icon .gg-moon{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(1);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid;
+    border-bottom: 2px solid transparent;
+}
+.header__icon .gg-moon::after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px;
+    border-radius: 50%;
+}
+/* MY CAROUSEL */
+.mycarousel{
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),url(../img/Diner.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: initial;
+    background-attachment: fixed;
+    min-height: 700px;
+    height: 700px;
+    width: 101%;
+}
+.mycarousel__content{
+    padding: 150px 0;
+    max-width: 600px;
+}
+.mycarousel__content h3{
+    font-size: 54px;
+    line-height: 64px;
+    font-weight: 600;
+    color: #fff;
+} 
+.mycarousel__content p{
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+.mycarousel__content .btn-white {
+    background: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 12px 45px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+.mycarousel__content .btn-white:hover {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #ff6600;
+}
+/* ABOUT */
+.about__right p{
+    font-size: 1.0625rem ;
+    line-height: 28px;
+    color: rgba(22, 28, 45, 0.7); 
+}
+.about .container{
+    width: 100%;
+}
+/* BOOK */
+.book{
+    background-color: #FF6600;
+}
+.book__img{
+    background-image: url(../img/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+.book__img::before{
+    content: '';
+    background: rgb(16 15 19 / 46%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.book__content{
+    height: 520px;
+}
+.book__icon{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: white;
+}
+.book__icon i{
+    font-size: 25px;
+    line-height: 70px;
+    color: #FF6600;
+    z-index: 3;
+}
+.book__icon:hover i{
+    color: #ffc600;
+}
+.book__option a{
+    display: block;
+    color: #232121;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.book__desc p{
+    color: #ffdfc9;
+}
+/* MENU */
+.menu__list .row{
+    flex-wrap: wrap;
+}
+.menu__list .menu__border img{
+    width: 100%;
+    border-radius: 5px;
+    position: relative;
+}
+.menu__list .menu__border::after{
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, -0.47) 69%, rgba(0, 0, 0, 0.76) 100%);
+    border-radius: 0 0 5px 5px;
+}
+.menu__list .menu__border img:hover{
+    opacity: 0.85;
+    /* background-color: rgba(255 , 225, 255, 0.1); */
+    transition: all 0.4s;
+}
+.menu__overlay a{
+    text-decoration: none;
+}
+.menu__overlay h4{
+    font-size: 22px;
+    line-height: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+.menu__overlay h6{
+    font-weight: 600;
+    color: #ffc600;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif;
+}
+.menu__overlay{
+    position: absolute;
+    left: 25px; bottom: 0;
+    opacity: 1;
+    transition: all 0.4s;
+    z-index: 1;
+}
+.menu__border{
+    position: relative;
+    cursor: pointer;
+
+}
+/* Service */
+.services {
+    position: relative;
+}
+.container {
+    width: 100%;
+}
+.row {
+    display: flex;
+}
+.services .col-4 {
+    width: 30%;
+    margin: 10px;
+}
+
+.box-wrap {
+    border: 1px solid lightgrey;
+    padding: 40px 40px;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    position: relative;
+}
+.services .box {
+    display: flex;
+}
+.box .icon {
+    margin-right: 10px;
+    font-size: 50px;
+    color: #FF6600;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-wrap:hover .icon{
+    background-color: #FF6600;
+    color: white;
+    
+} 
+.info a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}  
+.content {
+    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner2.jpg);
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position:center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.content_container {
+    max-width: 800px;
+    margin: auto;
+}
+.buttons {
+    margin-top: 60px;
+}
+.button_white {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-right: 30px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.button_white:hover {
+    background-color: white;
+    color: #FF6600;
+}
+.button_primary {
+    background-color: #FF6600;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.button_primary:hover {
+    color: white;
+    opacity: 0.8;
+}
+.welcome_left {
+    text-align: center;
+    margin-top: 90px;
+}
+.welcome_left h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    color: white;
+    max-width: 800px;
+}
+.numbers_container {
+    text-align: center;
+    margin-top: -90px;
+    position: relative;
+    z-index: 10;
+}
+
+.timer {
+    font-size: 40px;
+    font-weight: bold;
+}
+.row {
+    margin-left: 20px;
+}
+.col-md-3 {
+    background-color: white;
+    width: 23%;
+    border: 1px solid lightgrey;
+    padding: 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    margin-right: 15px;
+}
+.col-md-3:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 0px 10px 5px rgba(128, 128, 128, 0.5);
+}
+.col-md-3 i {
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: #FF6600;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.w3l-video .history-info {
+    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    min-height: 500px;
+    background-size: cover;
+}
+.zoom {
+    text-align: center;
+}
+.zoom_vid{
+    max-width: 750px;
+    margin: 40px auto;
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    /* display: none !important; */
+
+}
+.zoom_vid iframe {
+    width: 100%;
+    height: 400px;
+    display: block; 
+    object-fit: cover;
+}
+.w3l-video .video-play-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    padding-left: 2px;
+    text-align: center;
+    line-height: 76px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+    color: var(--primary-color);
+    border: transparent;
+    background: white;
+}
+
+.fa-play{
+    color: #FF6600;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+
+}
+.w3l-video .history-info:before {
+    content: "";
+    background: rgb(16 15 19 / 60%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: var(--border-radius);
+}
+
+         
+/* REPONSIVE */
+@media screen and (max-width: 1315px){
+    .book__img{
+    margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 1245px){
+    .header__right {
+     left: 680px;
+    }
+    .about h3{
+        width: 80%;
+    }
+    .book__img{
+        margin: 20px 0;
+        }
+}
+@media screen and (max-width: 1199.98px){
+    .header__left a {
+     left: -80px;
+     position: relative;
+    }
+    .mycarousel__content h3 {
+        font-size: 48px;
+        position: relative;
+        left: -70px;
+        width: 92%;
+    }
+    .mycarousel__content p {
+        position: relative;
+        left: -70px;
+        width: 95%;
+    }
+    .mycarousel__content .btn-white {
+        position: relative;
+        left: -5px;
+        padding: 8px 45px;
+        position: relative;
+        left: -70px;
+    }
+    .header__right {
+        position: relative;
+        top: -65px;
+        left: 605px;
+        gap: 0px;
+    }
+    .header__form .form-control {
+        font-size: 0.9rem;
+    }
+    .about h3{
+        width: 75%;
+    }
+    .book__content{
+        height: 570px;
+    }
+    .book__img{
+        height: 570px;
+    }
+} 
+@media screen and (max-width: 1080px){
+     h3{
+        font-size: 32px !important;
+        line-height: 40px;
+        width: 90%;
+    }
+    .book__img{
+        margin: 15px 0;
+        }
+}
+@media screen and (max-width: 1072px){
+    .header__right {
+        position: relative;
+        top: -55px;
+        left: 540px;
+        gap: 0px;
+    }
+    .header__left a {
+        top: -10px;
+        left: -100px;
+    }
+}
+@media screen and (max-width: 1047px){
+    .book__img{
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width: 1015px){
+    .header__right {
+        left: 500px;
+    }
+}
+@media screen and (max-width: 991.98px){
+    .header__left a {
+        left:-10px ;
+    }
+    .mycarousel__content h3 {
+    font-size: 44px;
+    line-height: 53px;
+    left: -20px;
+    top: 45px;
+    }
+    .mycarousel__content p {
+        left: -20px;
+        top: 60px;
+    }
+    .mycarousel__content .btn-white {
+        left: -20px;
+        top: 65px;
+    }
+    .header__right {
+        left: 380px;
+    }
+    .about .row{
+       font: optional;
+    }
+    .book__img{
+        height: 183px;
+        bottom: -175px;
+        width: 96vw;
+        margin-left: 25px;
+        margin-right: 25px !important;
+    }
+    .book__desc{
+        bottom: -155px;
+        position: relative;
+    }
+    .book{
+        height: 690px;
+    }
+    .book__list{
+        position: relative;
+        top: -161px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .header__right {
+        left: 365px;
+    }
+    .header__left a {
+        left:-35px ;
+    }
+}
+@media screen and (max-width: 902px){
+    .header__right {
+        left: 335px;
+    }
+    .header__left a {
+        left:-52px ;
+    }
+}
+@media screen and (max-width: 850px){
+    .header__right {
+        left: 315px;
+    }
+}
+@media screen and (max-width: 825px){
+    .header__right {
+        left: 290px;
+    }
+    .book__img{
+        width: 95vw;
+    }
+}
+@media screen and (max-width: 800px){
+    .mycarousel__content{
+        position: relative;
+        top: -50px;
+        width: 100%;
+    }
+    .mycarousel__content h3 {
+        width: 100%;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .mycarousel__content p {
+        width: 100%;
+    }
+    .menu__overlay{
+        left: auto;
+        bottom: 0;
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px){
+    .header__right {
+        left: 165px;
+    }
+    .menu__overlay h4{
+        font-size: 18px;
+    }
+    .menu__overlay h6{
+        font-size: 16px;
+    }
+    .menu__overlay{
+        position: absolute;
+        left: 12px; bottom: -16px;
+    }
+}
+@media screen and (max-width: 690px){
+    .header__right {
+        left: 110px;
+    }
+    .header__left a {
+        left: -70px;
+    }
+    .book__img{
+        width: 94vw;
+    }
+}
+@media screen and (max-width: 648px){
+    .header__right {
+        left: 75px;
+    }
+    .header__left a {
+        left: -85px;
+    }
+}
+@media screen and (max-width: 600px){
+    .header__form {
+        opacity: 0;
+    }
+    .about h3{
+        font-size: 30px !important;
+        line-height: 38px;
+        width: 102%;
+    }
+    .about h6{
+        font-size: 16px;
+    }
+    .about p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .about .container{
+        width: 95%;
+    }
+    .book__title h6{
+        font-size: 16px;
+    }
+    .book__title h3{
+        font-size: 30px !important;
+        line-height: 38px;
+    }
+    .book__title p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .book__img{
+        width: 93vw;
+    }
+}
+@media screen and (max-width: 576px){
+    .mycarousel__content h3 {
+    width: 118%;
+    top: 55px;
+    font-size: 40px !important;
+    line-height: 38px;
+    }
+    .mycarousel__content .btn-white {
+       padding: 10px 40px;
+       top: 36px;
+    }
+    .mycarousel .container{
+        margin-left: 25px;
+    }
+    .header__left a{
+        left: -118px;
+        top: -25px;
+    }
+    .header__right{
+        left: 7px;
+        top: -70px;
+    }
+    .mycarousel__content{
+        top: -44px;
+    }
+    .mycarousel__content p {
+        width: 125%;
+    }
+    .menu__overlay{
+        left: -7px;
+        bottom: -35px;
+    }
+    .menu__overlay h4 {
+        font-size: 16px;
+    }
+    .menu__overlay h6 {
+        font-size: 15px;
+        top: -5px;
+        position: relative;
+    }
+    .menu__border{
+        height: 94%;
+    }
+    .menu__border img{
+        height: 100%;
+    }
+    .book__option a{
+        font-size: 18px;
+    }
+    .book{
+        height: 720px;
+    }
+}
+@media screen and (max-width: 499.98px){
+    .book{
+        height: 730px;
+    }
+}
+@media screen and (max-width: 480px){
+    .about h3{
+        font-size: 26px !important;
+        line-height: 36px;
+    }
+    .book__img{
+        width: 92vw;
+    }
+    .book{
+        height: 755px;
+    }
+}
+@media screen and (max-width: 479px){
+    .book{
+        height: 755px;
+    }
+}
+@media screen and (max-width: 456px){
+    .menu__border{
+        height: 92%;
+    }
+}
+@media screen and (max-width: 415px){
+    .book__img{
+        width: 91vw;
+    }
+}
+
 /* blogposts */
 .blogposts{
     background: var(--bg-grey);
