@@ -165,13 +165,19 @@ header .container{
     line-height: 28px;
     color: rgba(22, 28, 45, 0.7); 
 }
+.about .container{
+    width: 100%;
+}
 /* BOOK */
+.book{
+    background-color: #FF6600;
+}
 .book__img{
     background-image: url(../img/banner3.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 80vh;
+    height: 500px;
     position: relative;
 }
 .book__img::before{
@@ -185,15 +191,14 @@ header .container{
     z-index: 2;
 }
 .book__content{
-    background-color: #FF6600;
-    height: 80vh;
+    height: 520px;
 }
 .book__icon{
     width: 70px;
     height: 70px;
     text-align: center;
     line-height: 70px;
-    border-radius: 3px;
+    border-radius: 5px;
     transition: 0.3s;
     background-color: white;
 }
@@ -202,6 +207,9 @@ header .container{
     line-height: 70px;
     color: #FF6600;
     z-index: 3;
+}
+.book__icon:hover i{
+    color: #ffc600;
 }
 .book__option a{
     display: block;
@@ -222,9 +230,19 @@ header .container{
 .menu__list .menu__border img{
     width: 100%;
     border-radius: 5px;
+    position: relative;
+}
+.menu__list .menu__border::after{
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, -0.47) 69%, rgba(0, 0, 0, 0.76) 100%);
+    border-radius: 0 0 5px 5px;
 }
 .menu__list .menu__border img:hover{
     opacity: 0.85;
+    /* background-color: rgba(255 , 225, 255, 0.1); */
     transition: all 0.4s;
 }
 .menu__overlay a{
@@ -237,22 +255,43 @@ header .container{
     font-weight: 700;
 }
 .menu__overlay h6{
-    font-weight: 500;
-    color: #D3A403;
+    font-weight: 600;
+    color: #ffc600;
     font-size: 18px;
     letter-spacing: 1px;
+    font-family: 'Quicksand', sans-serif;
 }
 .menu__overlay{
     position: absolute;
     left: 25px; bottom: 0;
     opacity: 1;
     transition: all 0.4s;
+    z-index: 1;
 }
 .menu__border{
     position: relative;
+    cursor: pointer;
+
 }
 
 /* REPONSIVE */
+@media screen and (max-width: 1315px){
+    .book__img{
+    margin: 15px 0;
+    }
+}
+
+@media screen and (max-width: 1245px){
+    .header__right {
+     left: 680px;
+    }
+    .about h3{
+        width: 80%;
+    }
+    .book__img{
+        margin: 20px 0;
+        }
+}
 @media screen and (max-width: 1199.98px){
     .header__left a {
      left: -80px;
@@ -285,7 +324,26 @@ header .container{
     .header__form .form-control {
         font-size: 0.9rem;
     }
+    .about h3{
+        width: 75%;
+    }
+    .book__content{
+        height: 570px;
+    }
+    .book__img{
+        height: 570px;
+    }
 } 
+@media screen and (max-width: 1080px){
+     h3{
+        font-size: 32px !important;
+        line-height: 40px;
+        width: 90%;
+    }
+    .book__img{
+        margin: 15px 0;
+        }
+}
 @media screen and (max-width: 1072px){
     .header__right {
         position: relative;
@@ -298,7 +356,12 @@ header .container{
         left: -100px;
     }
 }
-@media screen and (max-width: 1010px){
+@media screen and (max-width: 1047px){
+    .book__img{
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width: 1015px){
     .header__right {
         left: 500px;
     }
@@ -318,13 +381,35 @@ header .container{
         top: 60px;
     }
     .mycarousel__content .btn-white {
-    left: -20px;
-    top: 65px;
+        left: -20px;
+        top: 65px;
     }
     .header__right {
         left: 380px;
     }
+    .about .row{
+       font: optional;
+    }
+    .book__img{
+        height: 183px;
+        bottom: -175px;
+        width: 96vw;
+        margin-left: 25px;
+        margin-right: 25px !important;
+    }
+    .book__desc{
+        bottom: -155px;
+        position: relative;
+    }
+    .book{
+        height: 690px;
+    }
+    .book__list{
+        position: relative;
+        top: -161px;
+    }
 }
+
 @media screen and (max-width: 940px){
     .header__right {
         left: 365px;
@@ -350,6 +435,9 @@ header .container{
     .header__right {
         left: 290px;
     }
+    .book__img{
+        width: 95vw;
+    }
 }
 @media screen and (max-width: 800px){
     .mycarousel__content{
@@ -365,10 +453,25 @@ header .container{
     .mycarousel__content p {
         width: 100%;
     }
+    .menu__overlay{
+        left: auto;
+        bottom: 0;
+        width: 90%;
+    }
 }
 @media screen and (max-width: 768px){
     .header__right {
         left: 165px;
+    }
+    .menu__overlay h4{
+        font-size: 18px;
+    }
+    .menu__overlay h6{
+        font-size: 16px;
+    }
+    .menu__overlay{
+        position: absolute;
+        left: 12px; bottom: -16px;
     }
 }
 @media screen and (max-width: 690px){
@@ -377,6 +480,9 @@ header .container{
     }
     .header__left a {
         left: -70px;
+    }
+    .book__img{
+        width: 94vw;
     }
 }
 @media screen and (max-width: 648px){
@@ -391,42 +497,121 @@ header .container{
     .header__form {
         opacity: 0;
     }
+    .about h3{
+        font-size: 30px !important;
+        line-height: 38px;
+        width: 102%;
+    }
+    .about h6{
+        font-size: 16px;
+    }
+    .about p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .about .container{
+        width: 95%;
+    }
+    .book__title h6{
+        font-size: 16px;
+    }
+    .book__title h3{
+        font-size: 30px !important;
+        line-height: 38px;
+    }
+    .book__title p{
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .book__img{
+        width: 93vw;
+    }
 }
 @media screen and (max-width: 576px){
     .mycarousel__content h3 {
-    width: 110%;
-    line-height: 40px;
+    width: 118%;
     top: 55px;
+    font-size: 40px !important;
+    line-height: 38px;
     }
     .mycarousel__content .btn-white {
-       top: 45px;
+       padding: 10px 40px;
+       top: 36px;
     }
     .mycarousel .container{
         margin-left: 25px;
     }
     .header__left a{
-        left: -120px;
+        left: -118px;
+        top: -25px;
     }
     .header__right{
-        left: 30px;
-    }
-}
-@media screen and (max-width: 576px){
-    .mycarousel__content h3 {
-    font-size: 28px;
-    line-height: 38px;
+        left: 7px;
+        top: -70px;
     }
     .mycarousel__content{
-        top: -90px;
+        top: -44px;
     }
     .mycarousel__content p {
         width: 125%;
     }
-    .mycarousel__content .btn-white {
-        padding: 8px 25px;
-        top: 30px;
+    .menu__overlay{
+        left: -7px;
+        bottom: -35px;
     }
-    .header__right{
-        left: 0;
+    .menu__overlay h4 {
+        font-size: 16px;
+    }
+    .menu__overlay h6 {
+        font-size: 15px;
+        top: -5px;
+        position: relative;
+    }
+    .menu__border{
+        height: 94%;
+    }
+    .menu__border img{
+        height: 100%;
+    }
+    .book__option a{
+        font-size: 18px;
+    }
+    .book{
+        height: 720px;
     }
 }
+@media screen and (max-width: 499.98px){
+    .book{
+        height: 730px;
+    }
+}
+@media screen and (max-width: 480px){
+    .about h3{
+        font-size: 26px !important;
+        line-height: 36px;
+    }
+    .book__img{
+        width: 92vw;
+    }
+    .book{
+        height: 755px;
+    }
+}
+@media screen and (max-width: 479px){
+    .book{
+        height: 755px;
+    }
+}
+@media screen and (max-width: 456px){
+    .menu__border{
+        height: 92%;
+    }
+}
+@media screen and (max-width: 415px){
+    .book__img{
+        width: 91vw;
+    }
+}
+
+    
+
