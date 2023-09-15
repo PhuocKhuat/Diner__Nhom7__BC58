@@ -273,7 +273,233 @@ header .container{
     cursor: pointer;
 
 }
+/* Service */
+.services {
+    position: relative;
+}
+.container {
+    width: 100%;
+}
+.row {
+    display: flex;
+}
+.services .col-4 {
+    width: 30%;
+    margin: 10px;
+}
 
+.box-wrap {
+    border: 1px solid lightgrey;
+    padding: 40px 40px;
+    transition: 0.3s;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    position: relative;
+}
+.services .box {
+    display: flex;
+}
+.box .icon {
+    margin-right: 10px;
+    font-size: 50px;
+    color: #FF6600;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    background: var(--bg-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-wrap:hover .icon{
+    background-color: #FF6600;
+    color: white;
+    
+} 
+.info a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}  
+.content {
+    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner2.jpg);
+    background-repeat: no-repeat,
+    no-repeat,
+    no-repeat;
+    width: 100%;
+    height: 500px;
+    background-position:center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+    z-index: 1;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.content_container {
+    max-width: 800px;
+    margin: auto;
+}
+.buttons {
+    margin-top: 60px;
+}
+.button_white {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    margin-right: 30px;
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.button_white:hover {
+    background-color: white;
+    color: #FF6600;
+}
+.button_primary {
+    background-color: #FF6600;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+.button_primary:hover {
+    color: white;
+    opacity: 0.8;
+}
+.welcome_left {
+    text-align: center;
+    margin-top: 90px;
+}
+.welcome_left h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+    color: white;
+    max-width: 800px;
+}
+.numbers_container {
+    text-align: center;
+    margin-top: -90px;
+    position: relative;
+    z-index: 10;
+}
+
+.timer {
+    font-size: 40px;
+    font-weight: bold;
+}
+.row {
+    margin-left: 20px;
+}
+.col-md-3 {
+    background-color: white;
+    width: 23%;
+    border: 1px solid lightgrey;
+    padding: 30px 30px;
+    border-radius: 8px;
+    box-shadow: 0 25px 98px 0 rgba(0, 0, 0, 0.03);
+    margin-right: 15px;
+}
+.col-md-3:hover {
+    transform: translateY(-5px); 
+    box-shadow: 0px 0px 10px 5px rgba(128, 128, 128, 0.5);
+}
+.col-md-3 i {
+    margin: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: #FF6600;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.w3l-video .history-info {
+    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    min-height: 500px;
+    background-size: cover;
+}
+.zoom {
+    text-align: center;
+}
+.zoom_vid{
+    max-width: 750px;
+    margin: 40px auto;
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    /* display: none !important; */
+
+}
+.zoom_vid iframe {
+    width: 100%;
+    height: 400px;
+    display: block; 
+    object-fit: cover;
+}
+.w3l-video .video-play-icon {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 26px;
+    padding-left: 2px;
+    text-align: center;
+    line-height: 76px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    -webkit-animation: ripple 1s linear infinite;
+    animation: ripple 1s linear infinite;
+    color: var(--primary-color);
+    border: transparent;
+    background: white;
+}
+
+.fa-play{
+    color: #FF6600;
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+
+}
+.w3l-video .history-info:before {
+    content: "";
+    background: rgb(16 15 19 / 60%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: var(--border-radius);
+}
+
+         
 /* REPONSIVE */
 @media screen and (max-width: 1315px){
     .book__img{
