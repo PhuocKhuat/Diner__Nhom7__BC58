@@ -164,14 +164,7 @@ object-position: center;
 }
 
 
-.item2{
-    width: 1170px;
-    margin-right: 50px;
-}
-.stage2{
-    transform: translate3d(-2440px, 0px, 0px);
-    transition: all 0s ease 0s;
-    width: 9760px;}
+
 /* footer */
 .footer{
     background: var(--footer-bg);
@@ -268,8 +261,8 @@ position: relative;
 
 .btn-primary {
     color: #fff;
-    background-color: var(--primary-color);
-    border: 2px solid var(--primary-color);}
+    background-color: var(--primary-color) !important;
+    border: 2px solid var(--primary-color) !important;}
 
 
 .btn:hover{
@@ -306,8 +299,5 @@ background: var(--primary-color);
     visibility: visible;
     opacity: 1;
     }
-
-
-
 
 
