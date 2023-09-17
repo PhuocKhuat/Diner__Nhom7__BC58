@@ -59,10 +59,10 @@
       href="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/css/nav-overlay.css"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       href="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/css/style-liberty.css"
       rel="stylesheet"
-    />
+    /> -->
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/index.css" />
   </head>
@@ -918,12 +918,12 @@
                 </span>
               </button>
             </div>
-            <div class="owl-dots">
+            <!-- <div class="owl-dots">
               <button role="button" class="owl-dot"><span></span></button>
               <button role="button" class="owl-dot"><span></span></button>
               <button role="button" class="owl-dot"><span></span></button>
               <button role="button" class="owl-dot"><span></span></button>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -952,7 +952,7 @@
 
                 <div class="mt-4 social">
                   <a href="https://www.facebook.com/w3layouts/"
-                    ><span class="fab fa-facebook"></span
+                    ><span class="fab fa-facebook-f"></span
                   ></a>
 
                   <a href="https://twitter.com/W3layouts"
@@ -1050,7 +1050,24 @@
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"
     ></script>
-
+    <!-- WAYPOINTS MIN JS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- COUNTER CHẠY 1 LẦN -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- CONFIG -->
+    <script>
+      $(".timer").counterUp();
+    </script>
     <!-- owl js config -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
@@ -1059,16 +1076,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/js/owl.carousel.js"></script>
-
-    <!-- waypoint -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- countup js -->
-    <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+    <!-- countup js
+    <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script> -->
 
     <!-- back to top -->
     <script src="./back-to-top-master - Copy/assets/js/util.js"></script>
@@ -1094,7 +1103,6 @@
           },
         });
       });
-      $(".timer").countUp();
     </script>
   </body>
 </html>
