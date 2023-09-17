@@ -555,7 +555,7 @@ header .container {
 
 @media screen and (max-width: 1245px) {
   .header__right {
-    left: 680px;
+    left: 580px;
   }
   .about h3 {
     width: 80%;
@@ -563,34 +563,53 @@ header .container {
   .book__img {
     margin: 20px 0;
   }
-}
-@media screen and (max-width: 1199.98px) {
   .header__left a {
-    left: -80px;
+    left: -60px;
     position: relative;
   }
   .mycarousel__content h3 {
     font-size: 48px;
     position: relative;
-    left: -70px;
+    left: -8px;
     width: 92%;
   }
   .mycarousel__content p {
     position: relative;
-    left: -70px;
+    left: -5px;
     width: 95%;
   }
   .mycarousel__content .btn-white {
-    position: relative;
-    left: -5px;
     padding: 8px 45px;
     position: relative;
-    left: -70px;
+    left: -2px;
+  }
+}
+@media screen and (max-width: 1199.98px) {
+  .header__left a {
+    left: 20px;
+    top: -20px;
+    position: relative;
+  }
+  .mycarousel__content h3 {
+    font-size: 48px;
+    position: relative;
+    left: 2px;
+    width: 92%;
+  }
+  .mycarousel__content p {
+    position: relative;
+    left: 5px;
+    width: 95%;
+  }
+  .mycarousel__content .btn-white {
+    padding: 8px 45px;
+    position: relative;
+    left: 6px;
   }
   .header__right {
     position: relative;
-    top: -65px;
-    left: 605px;
+    top: -18px;
+    left: 506px;
     gap: 0px;
   }
   .header__form .form-control {
@@ -615,8 +634,18 @@ header .container {
   .book__img {
     margin: 15px 0;
   }
+  .mycarousel__content h3 {
+    left: 44px;
+    font-size: 48px !important;
+  }
+  .mycarousel__content p {
+    left: 47px;
+  }
+  .mycarousel__content .btn-white {
+    left: 50px;
+  }
 }
-@media screen and (max-width: 1072px) {
+/* @media screen and (max-width: 1072px) {
   .header__right {
     position: relative;
     top: -55px;
@@ -627,37 +656,37 @@ header .container {
     top: -10px;
     left: -100px;
   }
-}
+} */
 @media screen and (max-width: 1047px) {
   .book__img {
     margin: 30px 0;
   }
 }
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 1047px) {
   .header__right {
-    left: 500px;
+    left: 444px;
+  }
+}
+@media screen and (max-width: 1016px) {
+  .header__right {
+    left: 435px;
+  }
+  .header__left a {
+    left: -18px;
   }
 }
 @media screen and (max-width: 991.98px) {
   .header__left a {
-    left: -10px;
+    left: 35px;
   }
-  .mycarousel__content h3 {
-    font-size: 44px;
-    line-height: 53px;
-    left: -20px;
-    top: 45px;
-  }
-  .mycarousel__content p {
-    left: -20px;
-    top: 60px;
-  }
-  .mycarousel__content .btn-white {
-    left: -20px;
-    top: 65px;
+  .mycarousel__content {
+    padding: 150px 0;
+    max-width: 600px;
+    left: -64px;
+    position: relative;
   }
   .header__right {
-    left: 380px;
+    left: 310px;
   }
   .about .row {
     font: optional;
@@ -681,31 +710,41 @@ header .container {
     top: -161px;
   }
 }
-
+@media screen and (max-width: 965px) {
+  .mycarousel__content {
+    left: -46px;
+  }
+}
 @media screen and (max-width: 940px) {
   .header__right {
-    left: 365px;
+    left: 295px;
   }
   .header__left a {
-    left: -35px;
+    left: 30px;
   }
 }
 @media screen and (max-width: 902px) {
   .header__right {
-    left: 335px;
+    left: 265px;
   }
   .header__left a {
-    left: -52px;
+    left: 20px;
+  }
+  .mycarousel__content {
+    left: -28px;
   }
 }
 @media screen and (max-width: 850px) {
   .header__right {
-    left: 315px;
+    left: 240px;
   }
 }
 @media screen and (max-width: 825px) {
   .header__right {
-    left: 290px;
+    left: 220px;
+  }
+  .mycarousel__content {
+    left: 14px;
   }
   .book__img {
     width: 95vw;
@@ -716,10 +755,11 @@ header .container {
     position: relative;
     top: -50px;
     width: 100%;
+    left: -56px;
   }
   .mycarousel__content h3 {
     width: 100%;
-    font-size: 40px;
+    font-size: 40px !important;
     line-height: 50px;
   }
   .mycarousel__content p {
@@ -729,6 +769,9 @@ header .container {
     left: auto;
     bottom: 0;
     width: 90%;
+  }
+  .header__left a {
+    left: -60px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -745,6 +788,12 @@ header .container {
     position: absolute;
     left: 12px;
     bottom: -16px;
+  }
+  .mycarousel__content {
+    left: -80px;
+  }
+  .header__left a {
+    left: -10px;
   }
 }
 @media screen and (max-width: 690px) {
@@ -799,10 +848,16 @@ header .container {
   .book__img {
     width: 93vw;
   }
+  .header__left a {
+    left: -70px;
+  }
+  .mycarousel__content {
+    left: -70px;
+  }
 }
 @media screen and (max-width: 576px) {
   .mycarousel__content h3 {
-    width: 118%;
+    width: 103%;
     top: 55px;
     font-size: 40px !important;
     line-height: 38px;
@@ -815,18 +870,19 @@ header .container {
     margin-left: 25px;
   }
   .header__left a {
-    left: -118px;
+    left: -88px;
     top: -25px;
   }
   .header__right {
     left: 7px;
-    top: -70px;
+    top: -30px;
   }
   .mycarousel__content {
     top: -44px;
   }
   .mycarousel__content p {
-    width: 125%;
+    width: 92%;
+    top: 52px;
   }
   .menu__overlay {
     left: -7px;
@@ -853,9 +909,17 @@ header .container {
     height: 720px;
   }
 }
+@media screen and (max-width: 525px) {
+  .header__right {
+    top: -70px;
+  }
+}
 @media screen and (max-width: 499.98px) {
   .book {
     height: 730px;
+  }
+  .mycarousel__content h3 {
+    width: 96%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -869,6 +933,9 @@ header .container {
   .book {
     height: 755px;
   }
+  .mycarousel__content h3 {
+    font-size: 28px !important;
+  }
 }
 @media screen and (max-width: 479px) {
   .book {
@@ -878,6 +945,9 @@ header .container {
 @media screen and (max-width: 456px) {
   .menu__border {
     height: 92%;
+  }
+  .header__right {
+    left: -15px;
   }
 }
 @media screen and (max-width: 415px) {
