@@ -162,6 +162,12 @@ object-position: center;
     margin-top: 4px;
 
 }
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1.5;
+    background: transparent;
+    padding: 0 8px;
+}
 
 
 
