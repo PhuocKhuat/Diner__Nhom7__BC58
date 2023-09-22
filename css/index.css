@@ -475,7 +475,13 @@ header .container {
   border-radius: 50px;
   text-align: center;
 }
-
+/* VIDEO */
+.vp-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+}
 .w3l-video .history-info {
   background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner3.jpg);
   background-repeat: no-repeat;
@@ -524,7 +530,6 @@ header .container {
   background: white;
   position: relative;
   z-index: 1;
-  top: 225px;
 }
 .w3l-video .video-play-icon:hover {
   transform: scale(1.2);
@@ -544,16 +549,20 @@ header .container {
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
 }
-.w3l-video .history-info:before {
-  content: "";
-  background: rgb(16 15 19 / 60%);
-  position: absolute;
-  top: 0;
-  min-height: 100%;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  border-radius: 6px;
+/* COPYRIGHT */
+.copyright {
+  padding: 1.2em 0;
+  background: black;
+  border-top: 1px solid rgb(255 255 255 / 5%);
+}
+.copyright__text {
+  align-self: center;
+  color: #ddd;
+  font-size: 17px;
+  text-align: center;
+}
+.copyright__text a {
+  color: #ff6600;
 }
 
 /* REPONSIVE */
@@ -1021,6 +1030,15 @@ header .container {
 @media screen and (max-width: 415px) {
   .book__img {
     width: 91vw;
+  }
+  .cd-top--is-visible {
+    right: 55px;
+    bottom: 65px;
+  }
+  .footer form {
+    position: relative;
+    right: 42px;
+    width: 110%;
   }
 }
 

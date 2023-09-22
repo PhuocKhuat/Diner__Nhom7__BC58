@@ -59,6 +59,9 @@
       href="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/css/nav-overlay.css"
       rel="stylesheet"
     />
+    <!-- MAGNIFIC POPUP CSS -->
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+
     <!-- <link
       href="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/css/style-liberty.css"
       rel="stylesheet"
@@ -1021,7 +1024,18 @@
         </div>
       </section>
     </footer>
-
+    <!-- COPYRIGHT -->
+    <section class="copyright">
+      <div class="container">
+        <div class="row bottom-copies">
+          <p class="col-lg-8 copyright__text">
+            © 2023 Diner. All Rights Reserved | WordPress Theme by
+            <a href="https://w3layouts.com/">W3Layouts. </a>
+          </p>
+          <div class="col-lg-4 footer-list-29"></div>
+        </div>
+      </div>
+    </section>
     <a
       href="#"
       class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
@@ -1075,12 +1089,13 @@
     <script src="https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/js/owl.carousel.js"></script>
     <!-- countup js
     <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script> -->
-
+    <!-- MAGNIFIC POPUP JS -->
+    <script src="./js/jquery.magnific-popup.js"></script>
     <!-- back to top -->
     <script src="./back-to-top-master - Copy/assets/js/util.js"></script>
     <script src="./back-to-top-master - Copy/assets/js/main.js"></script>
 
-    <!-- config -->
+    <!-- CONFIG OWL CAROUSEL-->
     <script>
       $(document).ready(function () {
         $("#owl-agency").owlCarousel({
@@ -1098,6 +1113,26 @@
               nav: false,
             },
           },
+        });
+      });
+    </script>
+    <!-- CONFIG MAGNIFIC JS -->
+    <script>
+      $(document).ready(function () {
+        $(".zoom").magnificPopup({
+          type: "inline",
+
+          fixedContentPos: false,
+          fixedBgPos: true,
+
+          overflowY: "auto",
+
+          closeBtnInside: true,
+          preloader: false,
+
+          midClick: true,
+          removalDelay: 300,
+          mainClass: "my-mfp-zoom-in",
         });
       });
     </script>
