@@ -630,6 +630,7 @@ header .container {
 }
 .copyright__text a {
   color: #ff6600;
+  text-decoration: none;
 }
 
 /* REPONSIVE */
@@ -906,7 +907,7 @@ header .container {
     left: -60px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.98px) {
   .header__right {
     left: 165px;
   }
@@ -999,7 +1000,7 @@ header .container {
     left: -70px;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575.98px) {
   .mycarousel__content h3 {
     width: 103%;
     top: 55px;
@@ -1052,6 +1053,11 @@ header .container {
   .book {
     height: 720px;
   }
+  .footer form {
+    position: relative;
+    right: 45px;
+    width: 105%;
+  }
 }
 @media screen and (max-width: 525px) {
   .header__right {
@@ -1094,6 +1100,13 @@ header .container {
     left: -15px;
   }
 }
+@media screen and (max-width: 426px) {
+  .footer form {
+    position: relative;
+    right: 52px;
+    width: 110%;
+  }
+}
 @media screen and (max-width: 415px) {
   .book__img {
     width: 91vw;
@@ -1101,11 +1114,6 @@ header .container {
   .cd-top--is-visible {
     right: 55px;
     bottom: 65px;
-  }
-  .footer form {
-    position: relative;
-    right: 42px;
-    width: 110%;
   }
 }
 
